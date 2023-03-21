@@ -1,0 +1,237 @@
+@import url("./scss/animate.css");
+@import url("./scss/header.css");
+@import url("./scss/footer.css");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Shantell Sans', cursive;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    font-size: calc(8px + 13.6 * ((100vw - 320px) / 1200));
+  }
+}
+
+@media (min-width: 767px) {
+  :root {
+    font-size: calc(8px + 8 * (100vw / 1200));
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  z-index: 1;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 50vh;
+  width: 100vw;
+}
+
+main .main__body {
+  height: 100%;
+}
+
+main .main__body__container {
+  height: 100%;
+  position: relative;
+}
+
+main .main__body__container .wolf {
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  left: 140px;
+}
+
+main .main__body__container .wolf img {
+  width: 100px;
+  height: 100px;
+}
+
+main .main__body__container .sheep {
+  z-index: 2;
+  position: absolute;
+  bottom: 80px;
+  left: 130px;
+}
+
+main .main__body__container .sheep img {
+  width: 100px;
+  height: 100px;
+}
+
+main .main__body__container .peasant {
+  z-index: 2;
+  position: absolute;
+  bottom: 80px;
+  left: 410px;
+}
+
+main .main__body__container .peasant img {
+  width: 100px;
+  height: 100px;
+}
+
+main .main__body__container .cabbage {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 230px;
+}
+
+main .main__body__container .cabbage img {
+  width: 80px;
+  height: 80px;
+}
+
+main .main__body__container .boat {
+  z-index: 3;
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+}
+
+main .main__body__container .boat img {
+  width: 200px;
+  height: 50px;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+main .main__body__container .river {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+
+main .main__body__container .river img {
+  width: 600px;
+  height: 150px;
+}
+
+main .main__body__container .meadow1 {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+main .main__body__container .meadow1 img {
+  border-radius: 10%;
+  width: 300px;
+  height: 150px;
+}
+
+main .main__body__container .meadow2 {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .main__body__container .meadow2 img {
+  border-radius: 10%;
+  width: 300px;
+  height: 150px;
+}
+
+main .main__body__container .cloud {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  -webkit-animation: clouds 50s infinite;
+          animation: clouds 50s infinite;
+}
+
+main .main__body__container .cloud img {
+  width: 200px;
+  height: 100px;
+}
+
+@-webkit-keyframes clouds {
+  0% {
+    left: 300px;
+  }
+  50% {
+    left: 600px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes clouds {
+  0% {
+    left: 300px;
+  }
+  50% {
+    left: 600px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+main .main__body__container .sun {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: suns 60s infinite;
+          animation: suns 60s infinite;
+}
+
+main .main__body__container .sun img {
+  width: 150px;
+  height: 150px;
+}
+
+@-webkit-keyframes suns {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes suns {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
